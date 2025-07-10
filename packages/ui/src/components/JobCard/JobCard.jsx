@@ -1,6 +1,17 @@
 import './JobCard.css';
 
 function JobCard({ job, onEdit }) {
+  const adaptedJob = {
+    title: capitalize(job.jobType),
+    company: job.companyName,
+    city: job.location,
+    contractType: job.contractType?.toUpperCase(),
+    remoteType: mapRemote(job.remoteType),
+    salary: formatSalary(job.salary),
+    createdAt: job.createdAt
+  };
+
+  // ⬇️ EXTRACTION des champs
   const {
     title,
     company,
@@ -8,8 +19,8 @@ function JobCard({ job, onEdit }) {
     contractType,
     remoteType,
     salary,
-    createdAt,
-  } = job;
+    createdAt
+  } = adaptedJob;
 
   return (
     <div className="job-card">
@@ -19,9 +30,7 @@ function JobCard({ job, onEdit }) {
         <div className="job-title-row">
           <h3 className="job-title">{title}</h3>
           {remoteType && (
-            <span className="job-remote-tag">
-              {remoteType}
-            </span>
+            <span className="job-remote-tag">{remoteType}</span>
           )}
         </div>
 
@@ -41,7 +50,25 @@ function JobCard({ job, onEdit }) {
   );
 }
 
-// Utilitaire de calcul "il y a X jours"
+// Utilitaires
+function capitalize(str) {
+  return str?.charAt(0).toUpperCase() + str?.slice(1);
+}
+
+function mapRemote(value) {
+  const dict = {
+    partial: "Télétravail partiel",
+    ponctual: "Télétravail ponctuel",
+    total: "Télétravail total",
+    unspecified: "Non spécifié"
+  };
+  return dict[value] || value;
+}
+
+function formatSalary(amount) {
+  return (amount / 1000).toFixed(1); // 38681 → 38.7
+}
+
 function daysSince(dateString) {
   const date = new Date(dateString);
   const diff = Date.now() - date.getTime();
