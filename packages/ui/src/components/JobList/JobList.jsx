@@ -92,10 +92,10 @@ function JobList() {
       </button>
 
       <h2>Les jobs</h2>
-
-      <Filters filters={filters} onFilterChange={handleFilterChange} />
-
-      <Sort sortBy={sortBy} onChange={setSortBy} />
+      <div className="sort-filter-bar">
+        <Filters filters={filters} onFilterChange={handleFilterChange} />
+        <Sort sortBy={sortBy} onChange={setSortBy} />
+      </div>
 
       {sortedJobs.length === 0 ? (
         <p>Aucune offre ne correspond aux filtres sélectionnés.</p>

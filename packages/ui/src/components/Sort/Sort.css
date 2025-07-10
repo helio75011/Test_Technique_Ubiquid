@@ -13,19 +13,26 @@
 }
 
 .sort-select {
-  padding: 6px 12px;
-  font-size: 0.9rem;
-  border: 1px solid #ddd;
+  appearance: none; /* enlève la flèche native */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #f8f8fb;
+  border: none;
+  padding: 8px 32px 8px 12px;
   border-radius: 8px;
-  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #333;
-  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 24 24' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
   cursor: pointer;
-  transition: border-color 0.2s ease;
 }
 
-.sort-select:hover,
 .sort-select:focus {
-  border-color: #5d3dfd;
   outline: none;
+  border-color: #5d3dfd;
 }
+

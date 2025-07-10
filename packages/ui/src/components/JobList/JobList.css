@@ -61,3 +61,23 @@
 .stats-link:hover {
   text-decoration: underline;
 }
+
+.sort-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* pour éviter les débordements en mobile */
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.sort-container {
+  flex-shrink: 0;
+}

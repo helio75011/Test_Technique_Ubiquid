@@ -36,7 +36,7 @@ function FilterDropdown({ title, options, selected, onChange }) {
 
       {open && (
         <fieldset className="filter-group">
-          <legend>{title}</legend>
+          {/* <legend>{title}</legend> */}
           {options.map(option => (
             <label key={option} className="filter-option">
               <input
