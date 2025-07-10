@@ -23,10 +23,10 @@
     {
       "id": 3,
       "companyName": "TechNova",
-      "jobType": "back",
-      "contractType": "stage",
+      "jobType": "fullstack",
+      "contractType": "cdi",
       "location": "Toulouse",
-      "salary": 38286,
+      "salary": 49000,
       "createdAt": "2025-01-11",
       "remoteType": "partial"
     },
