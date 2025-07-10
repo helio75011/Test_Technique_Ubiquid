@@ -3,6 +3,7 @@ import './JobList.css';
 import JobCard from '../JobCard/JobCard';
 import Filters from '../Filter/Filter';
 import Sort from '../Sort/Sort';
+import JobModal from '../JobModal/JobModal';
 
 const TITLES = [
   'Dev Backend',
@@ -29,6 +30,9 @@ function JobList() {
     contracts: [],
     remotes: []
   });
+  const [showModal, setShowModal] = useState(false);
+  const [jobToEdit, setJobToEdit] = useState(null);
+
   const [sortBy, setSortBy] = useState('date');
 
   useEffect(() => {
@@ -64,45 +68,52 @@ function JobList() {
   }, [filteredJobs, sortBy]);
 
   return (
-    <div className="job-list">
+     <div className="job-list">
+      <button className="add-button" onClick={() => {
+        setJobToEdit(null);
+        setShowModal(true);
+        }}>
+          Ajouter une offre
+      </button>
+      
       <h2>Les jobs</h2>
-
+      
       <Filters filters={filters} onFilterChange={handleFilterChange} />
-
+      
       <Sort sortBy={sortBy} onChange={setSortBy} />
-
+      
+      {sortedJobs.length === 0 ? (
+        
+        <p>Aucune offre ne correspond aux filtres sélectionnés.</p>
+      ) : (
       <ul className="job-cards">
         {sortedJobs.map((job, index) => (
-          <JobCard key={index} job={job} onEdit={job => console.log('Modifier', job)} />
-        ))}
-      </ul>
-
-    </div>
-  );
-}
-
-function FilterGroup({ title, options, selected, onChange }) {
-  return (
-    <div className="filter-group">
-      <h4>{title}</h4>
-      {options.map(option => (
-        <label key={option}>
-          <input
-            type="checkbox"
-            checked={selected.includes(option)}
-            onChange={() => onChange(option)}
+          <JobCard
+          key={index}
+          job={job}
+          onEdit={(job) => {
+            setJobToEdit(job);
+            setShowModal(true);
+          }}
           />
-          {option}
-        </label>
-      ))}
-    </div>
-  );
-}
-
-function daysSince(dateString) {
-  const date = new Date(dateString);
-  const diff = Date.now() - date.getTime();
-  return Math.floor(diff / (1000 * 60 * 60 * 24));
-}
+        ))}
+        </ul>
+      )}
+        
+      <JobModal
+       isOpen={showModal}
+       onClose={() => setShowModal(false)}
+       jobToEdit={jobToEdit}
+       onSave={(newJob) => {
+         if (jobToEdit) {
+            setJobs(prev => prev.map(j => j === jobToEdit ? newJob : j));
+          } else {
+            setJobs(prev => [...prev, newJob]);
+          }
+        }}
+        />
+      </div>
+    );
+  }
 
 export default JobList;
