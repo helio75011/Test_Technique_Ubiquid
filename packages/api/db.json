@@ -989,16 +989,6 @@
       "salary": 29482,
       "createdAt": "2025-02-03",
       "remoteType": "ponctual"
-    },
-    {
-      "companyName": "CyberNest",
-      "jobType": "manager",
-      "contractType": "cdd",
-      "location": "Montpellier",
-      "salary": 38681,
-      "remoteType": "partial",
-      "id": 101,
-      "createdAt": "2025-07-10T15:27:33.070Z"
     }
   ]
 }

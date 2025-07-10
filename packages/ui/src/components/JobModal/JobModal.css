@@ -59,3 +59,17 @@ button.cancel {
   border-radius: 8px;
   cursor: pointer;
 }
+
+button.delete {
+  background: #ffecec;
+  color: #d11a2a;
+  border: 1px solid #f5c2c7;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.delete:hover {
+  background-color: #ffdede;
+}

@@ -1,0 +1,15 @@
+.stats {
+  background: #f8f8fb;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.stats h2 {
+  margin-bottom: 1rem;
+}
+
+.stats ul {
+  list-style: none;
+  padding: 0;
+}
