@@ -1,20 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './Filter.css';
 
 function Filters({ filters, onFilterChange }) {
-  const TITLE_OPTIONS = [
-    'Dev Backend',
-    'Dev Fullstack',
-    'Dev Frontend',
-    'Project / Product Management',
-  ];
-  const CONTRACT_OPTIONS = ['CDD', 'CDI', 'Stage'];
-  const REMOTE_OPTIONS = [
-    'Télétravail partiel',
-    'Télétravail ponctuel',
-    'Télétravail total',
-    'Non spécifié',
-  ];
+  // ✅ Données du backend (clés)
+  const TITLE_OPTIONS = ['backend', 'frontend', 'fullstack', 'manager'];
+  const CONTRACT_OPTIONS = ['cdi', 'cdd', 'stage'];
+  const REMOTE_OPTIONS = ['partial', 'ponctual', 'total', 'unspecified'];
 
   return (
     <div className="filters-container">
@@ -53,13 +44,27 @@ function FilterDropdown({ title, options, selected, onChange }) {
                 checked={selected.includes(option)}
                 onChange={() => onChange(option)}
               />
-              {option}
+              {formatLabel(option, title)}
             </label>
           ))}
         </fieldset>
       )}
     </div>
   );
+}
+
+function formatLabel(value, category) {
+  if (category === 'Télétravail') {
+    const map = {
+      partial: 'Télétravail partiel',
+      ponctual: 'Télétravail ponctuel',
+      total: 'Télétravail total',
+      unspecified: 'Non spécifié'
+    };
+    return map[value] || value;
+  }
+
+  return value.charAt(0).toUpperCase() + value.slice(1); // capitaliser les autres
 }
 
 export default Filters;

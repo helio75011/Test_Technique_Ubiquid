@@ -41,22 +41,16 @@ function JobList() {
       .then(setJobs)
       .catch(err => console.error('Erreur chargement jobs:', err));
   }, []);
-
-  const handleFilterChange = (category, value) => {
-    setFilters(prev => {
-      const alreadySelected = prev[category].includes(value);
-      const updated = alreadySelected
-        ? prev[category].filter(v => v !== value)
-        : [...prev[category], value];
-      return { ...prev, [category]: updated };
-    });
+  
+  const handleFilterChange = (category, updatedValues) => {
+    setFilters(prev => ({ ...prev, [category]: updatedValues }));
   };
-
+  
   const filteredJobs = useMemo(() => {
     return jobs
-      .filter(job => filters.titles.length === 0 || filters.titles.includes(job.title))
-      .filter(job => filters.contracts.length === 0 || filters.contracts.includes(job.contractType))
-      .filter(job => filters.remotes.length === 0 || filters.remotes.includes(job.remoteType));
+    .filter(job => filters.titles.length === 0 || filters.titles.includes(job.jobType?.toLowerCase()))
+    .filter(job => filters.contracts.length === 0 || filters.contracts.includes(job.contractType?.toLowerCase()))
+    .filter(job => filters.remotes.length === 0 || filters.remotes.includes(job.remoteType?.toLowerCase()));
   }, [jobs, filters]);
 
   const sortedJobs = useMemo(() => {
