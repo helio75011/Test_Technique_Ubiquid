@@ -36,8 +36,35 @@
   height: 16px;
 }
 
+/* Bouton qui déclenche l'ouverture */
+.filter-toggle {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2e2e2e;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: background-color 0.2s ease;
+}
+
+.filter-toggle:hover {
+  background-color: #f0edff;
+  border-color: #cfc6ff;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 0.75rem;
+  color: #7d7d7d;
+}
+
+/* Conserve ton style responsive */
 @media (max-width: 600px) {
   .filters-container {
     flex-direction: column;
   }
 }
+

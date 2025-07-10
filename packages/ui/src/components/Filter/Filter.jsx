@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Filter.css';
 
 function Filters({ filters, onFilterChange }) {
@@ -5,66 +6,59 @@ function Filters({ filters, onFilterChange }) {
     'Dev Backend',
     'Dev Fullstack',
     'Dev Frontend',
-    'Project / Product Management'
+    'Project / Product Management',
   ];
   const CONTRACT_OPTIONS = ['CDD', 'CDI', 'Stage'];
   const REMOTE_OPTIONS = [
     'Télétravail partiel',
     'Télétravail ponctuel',
     'Télétravail total',
-    'Non spécifié'
+    'Non spécifié',
   ];
-
-  const handleCheckboxChange = (category, value) => {
-    const isSelected = filters[category].includes(value);
-    const updated = isSelected
-      ? filters[category].filter(v => v !== value)
-      : [...filters[category], value];
-
-    onFilterChange(category, updated);
-  };
 
   return (
     <div className="filters-container">
-      <FilterGroup
-        title="Poste"
-        options={TITLE_OPTIONS}
-        selected={filters.titles}
-        onChange={val => handleCheckboxChange('titles', val)}
-      />
-
-      <FilterGroup
-        title="Contrat"
-        options={CONTRACT_OPTIONS}
-        selected={filters.contracts}
-        onChange={val => handleCheckboxChange('contracts', val)}
-      />
-
-      <FilterGroup
-        title="Télétravail"
-        options={REMOTE_OPTIONS}
-        selected={filters.remotes}
-        onChange={val => handleCheckboxChange('remotes', val)}
-      />
+      <FilterDropdown title="Poste" options={TITLE_OPTIONS} selected={filters.titles} onChange={(val) => handle(val, 'titles')} />
+      <FilterDropdown title="Contrat" options={CONTRACT_OPTIONS} selected={filters.contracts} onChange={(val) => handle(val, 'contracts')} />
+      <FilterDropdown title="Télétravail" options={REMOTE_OPTIONS} selected={filters.remotes} onChange={(val) => handle(val, 'remotes')} />
     </div>
   );
+
+  function handle(value, category) {
+    const isSelected = filters[category].includes(value);
+    const updated = isSelected
+      ? filters[category].filter((v) => v !== value)
+      : [...filters[category], value];
+
+    onFilterChange(category, updated);
+  }
 }
 
-function FilterGroup({ title, options, selected, onChange }) {
+function FilterDropdown({ title, options, selected, onChange }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <fieldset className="filter-group">
-      <legend>{title}</legend>
-      {options.map(option => (
-        <label key={option} className="filter-option">
-          <input
-            type="checkbox"
-            checked={selected.includes(option)}
-            onChange={() => onChange(option)}
-          />
-          {option}
-        </label>
-      ))}
-    </fieldset>
+    <div className="filter-dropdown">
+      <button className="filter-toggle" onClick={() => setOpen(!open)}>
+        {title} <span className="arrow">{open ? '▲' : '▼'}</span>
+      </button>
+
+      {open && (
+        <fieldset className="filter-group">
+          <legend>{title}</legend>
+          {options.map(option => (
+            <label key={option} className="filter-option">
+              <input
+                type="checkbox"
+                checked={selected.includes(option)}
+                onChange={() => onChange(option)}
+              />
+              {option}
+            </label>
+          ))}
+        </fieldset>
+      )}
+    </div>
   );
 }
 
