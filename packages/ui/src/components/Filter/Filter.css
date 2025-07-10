@@ -1,0 +1,70 @@
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  background-color: #f8f8fb;
+  padding: 16px;
+  border-radius: 12px;
+  min-width: 200px;
+  flex: 1;
+  border: 1px solid #e5e5f0;
+}
+
+.filter-group legend {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.filter-option input[type='checkbox'] {
+  accent-color: #5d3dfd; /* violet branding */
+  width: 16px;
+  height: 16px;
+}
+
+/* Bouton qui déclenche l'ouverture */
+.filter-toggle {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2e2e2e;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  transition: background-color 0.2s ease;
+}
+
+.filter-toggle:hover {
+  background-color: #f0edff;
+  border-color: #cfc6ff;
+}
+
+.arrow {
+  margin-left: 8px;
+  font-size: 0.75rem;
+  color: #7d7d7d;
+}
+
+/* Conserve ton style responsive */
+@media (max-width: 600px) {
+  .filters-container {
+    flex-direction: column;
+  }
+}
+

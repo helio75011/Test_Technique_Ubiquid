@@ -5,7 +5,7 @@ import JobsRouter from "./features/jobs/router";
 const app = express();
 
 app.use(cors());
-
+app.use(express.json());
 app.use("/jobs", JobsRouter);
 
 export { app };

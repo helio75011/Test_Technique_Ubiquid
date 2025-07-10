@@ -1,7 +1,11 @@
-import JobList from './components/JobList';
+import JobList from './components/JobList/JobList';
 
 function App() {
-  return <JobList />;
+  return (
+    <div className="App">
+      <JobList />
+    </div>
+  );
 }
 
 export default App;
