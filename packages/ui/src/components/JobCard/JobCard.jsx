@@ -1,4 +1,4 @@
-import './JobCard.css';
+import "./JobCard.css";
 
 function JobCard({ job, onEdit }) {
   const adaptedJob = {
@@ -8,39 +8,33 @@ function JobCard({ job, onEdit }) {
     contractType: job.contractType?.toUpperCase(),
     remoteType: mapRemote(job.remoteType),
     salary: formatSalary(job.salary),
-    createdAt: job.createdAt
+    createdAt: job.createdAt,
   };
 
   // ⬇️ EXTRACTION des champs
-  const {
-    title,
-    company,
-    city,
-    contractType,
-    remoteType,
-    salary,
-    createdAt
-  } = adaptedJob;
+  const { title, company, city, contractType, remoteType, salary, createdAt } =
+    adaptedJob;
 
   return (
     <div className="job-card">
-      <div className="job-initial">{title?.[0] || '?'}</div>
+      <div className="job-initial">{title?.[0] || "?"}</div>
 
       <div className="job-content">
         <div className="job-title-row">
           <h3 className="job-title">{title}</h3>
-          {remoteType && (
-            <span className="job-remote-tag">{remoteType}</span>
-          )}
+          {remoteType && <span className="job-remote-tag">{remoteType}</span>}
         </div>
-
-        <p className="job-company-city">{company} – {city}</p>
-        <p className="job-contract">{contractType}</p>
-
-        <div className="job-footer">
-          <span className="job-salary">Salaire {salary}k</span>
-          <span className="job-date">il y a {daysSince(createdAt)} jours</span>
+        <div className="job-meta-row">
+          <p className="job-company-city">
+            {company} – {city}
+          </p>
+          <p className="job-contract">{contractType}</p>
         </div>
+      </div>
+
+      <div className="job-footer">
+        <span className="job-salary">Salaire {salary}k</span>
+        <span className="job-date">il y a {daysSince(createdAt)} jours</span>
       </div>
 
       <button className="job-edit-button" onClick={() => onEdit(job)}>
@@ -60,7 +54,7 @@ function mapRemote(value) {
     partial: "Télétravail partiel",
     ponctual: "Télétravail ponctuel",
     total: "Télétravail total",
-    unspecified: "Non spécifié"
+    unspecified: "Non spécifié",
   };
   return dict[value] || value;
 }

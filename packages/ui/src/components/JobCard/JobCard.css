@@ -2,26 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
+  padding: 16px 24px;
+  background-color: #fff;
+  border: 1px solid #e5e5f0;
   border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 16px;
-  transition: transform 0.1s ease;
-}
-
-.job-card:hover {
-  transform: scale(1.01);
+  box-shadow: 0 2px 4px rgba(93, 61, 253, 0.05);
+  margin-bottom: 12px;
 }
 
 .job-initial {
-  width: 40px;
-  height: 40px;
-  background-color: #eceafe;
+  background-color: #f4f0ff;
   color: #5d3dfd;
   font-weight: bold;
   font-size: 1.2rem;
-  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,43 +26,63 @@
 }
 
 .job-content {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .job-title-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.job-title {
-  font-size: 1rem;
+  gap: 12px;
   font-weight: 600;
-  color: #2e2e2e;
-  margin: 0;
 }
 
 .job-remote-tag {
-  background-color: #eceafe;
+  background-color: #f4f0ff;
   color: #5d3dfd;
   font-size: 0.75rem;
-  padding: 2px 6px;
-  border-radius: 6px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.job-meta-row {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.job-title-row h3 {
+  margin: 0;
 }
 
 .job-company-city,
 .job-contract {
-  font-size: 0.875rem;
-  color: #555;
-  margin: 2px 0;
+  margin: 0;
+}
+
+.job-company-city {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.job-contract {
+  font-size: 0.85rem;
+  color: #999;
+  margin-left: 12px;
 }
 
 .job-footer {
-  margin-top: 6px;
-  font-size: 0.8rem;
   display: flex;
-  gap: 16px;
-  color: #888;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 16px;
+  min-width: 120px;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: #444;
+  text-align: right;
 }
 
 .job-salary {
@@ -75,16 +91,16 @@
 }
 
 .job-edit-button {
-  background-color: #f5f0ff;
+  background-color: transparent;
   color: #5d3dfd;
-  border: 1px solid #e0d7ff;
+  border: 1px solid #cfc4fc;
   padding: 6px 12px;
   border-radius: 8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .job-edit-button:hover {
-  background-color: #ebe3ff;
+  background-color: #f4f0ff;
 }
