@@ -34,10 +34,23 @@ export default function JobModal({ isOpen, onClose, onSave, jobToEdit }) {
   const handleSubmit = () => {
     const payload = {
       ...form,
-      salary: parseFloat(form.salary), // ← transforme "43000" → 43000
+      salary: parseFloat(form.salary),
     };
     onSave(payload);
     onClose();
+  };
+
+  const handleDelete = async (id) => {
+    const confirmed = window.confirm("Supprimer cette offre ?");
+    if (!confirmed) return;
+
+    await fetch(`http://localhost:3000/jobs/${id}`, {
+      method: "DELETE",
+    });
+
+    onClose();
+  
+    onSave({ deletedId: id });
   };
 
   if (!isOpen) return null;
@@ -110,6 +123,14 @@ export default function JobModal({ isOpen, onClose, onSave, jobToEdit }) {
         </label>
 
         <div className="modal-actions">
+          {jobToEdit && (
+            <button
+              onClick={() => handleDelete(jobToEdit.id)}
+              className="delete"
+            >
+              Supprimer
+            </button>
+          )}
           <button onClick={handleSubmit} className="save">
             Enregistrer
           </button>
