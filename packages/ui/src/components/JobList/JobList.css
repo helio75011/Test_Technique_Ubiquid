@@ -13,7 +13,6 @@
   margin-bottom: 24px;
 }
 
-/* Bouton Ajouter une offre */
 .job-list .add-button {
   background-color: #5d3dfd;
   color: #fff;
@@ -50,4 +49,15 @@
     width: 100%;
     float: none;
   }
+}
+
+.stats-link {
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: bold;
+  color: #5d3dfd;
+}
+
+.stats-link:hover {
+  text-decoration: underline;
 }

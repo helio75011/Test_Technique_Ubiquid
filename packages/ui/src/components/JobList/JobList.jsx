@@ -1,4 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 import "./JobList.css";
 import JobCard from "../JobCard/JobCard";
 import Filters from "../Filter/Filter";
@@ -77,6 +78,9 @@ function JobList() {
 
   return (
     <div className="job-list">
+      <Link to="/stats" className="stats-link">
+        Voir les statistiques 📊
+      </Link>
       <button
         className="add-button"
         onClick={() => {
