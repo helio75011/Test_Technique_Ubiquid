@@ -1,7 +1,8 @@
 import { useEffect, useState, useMemo } from 'react';
-import JobCard from './JobCard';
-import Filters from './Filter';
-import Sort from './Sort';
+import './JobList.css';
+import JobCard from '../JobCard/JobCard';
+import Filters from '../Filter/Filter';
+import Sort from '../Sort/Sort';
 
 const TITLES = [
   'Dev Backend',
@@ -75,7 +76,7 @@ function JobList() {
           <JobCard key={index} job={job} onEdit={job => console.log('Modifier', job)} />
         ))}
       </ul>
-      
+
     </div>
   );
 }

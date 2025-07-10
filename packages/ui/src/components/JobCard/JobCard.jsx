@@ -1,4 +1,4 @@
-// import './JobCard.css';
+import './JobCard.css';
 
 function JobCard({ job, onEdit }) {
   const {

@@ -1,4 +1,4 @@
-// import './Filters.css';
+import './Filter.css';
 
 function Filters({ filters, onFilterChange }) {
   const TITLE_OPTIONS = [

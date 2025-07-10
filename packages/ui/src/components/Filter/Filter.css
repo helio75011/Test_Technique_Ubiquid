@@ -1,0 +1,43 @@
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  background-color: #f8f8fb;
+  padding: 16px;
+  border-radius: 12px;
+  min-width: 200px;
+  flex: 1;
+  border: 1px solid #e5e5f0;
+}
+
+.filter-group legend {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.filter-option input[type='checkbox'] {
+  accent-color: #5d3dfd; /* violet branding */
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 600px) {
+  .filters-container {
+    flex-direction: column;
+  }
+}
