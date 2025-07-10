@@ -1,4 +1,7 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
+import JobCard from './JobCard';
+import Filters from './Filter';
+import Sort from './Sort';
 
 const TITLES = [
   'Dev Backend',
@@ -63,25 +66,16 @@ function JobList() {
     <div className="job-list">
       <h2>Les jobs</h2>
 
-      <div className="filters">
-        <FilterGroup title="Poste" options={TITLES} selected={filters.titles} onChange={val => handleFilterChange('titles', val)} />
-        <FilterGroup title="Contrat" options={CONTRACTS} selected={filters.contracts} onChange={val => handleFilterChange('contracts', val)} />
-        <FilterGroup title="Télétravail" options={REMOTES} selected={filters.remotes} onChange={val => handleFilterChange('remotes', val)} />
-      </div>
+      <Filters filters={filters} onFilterChange={handleFilterChange} />
 
-      <div className="sort">
-        Trier par :
-        <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
-          <option value="date">Date</option>
-          <option value="salaire">Salaire</option>
-        </select>
-      </div>
+      <Sort sortBy={sortBy} onChange={setSortBy} />
 
       <ul className="job-cards">
         {sortedJobs.map((job, index) => (
-            <JobCard key={index} job={job} onEdit={job => console.log('Éditer', job)} />
+          <JobCard key={index} job={job} onEdit={job => console.log('Modifier', job)} />
         ))}
       </ul>
+      
     </div>
   );
 }
