@@ -31,16 +31,6 @@
       "remoteType": "partial"
     },
     {
-      "id": 4,
-      "companyName": "SmartApps",
-      "jobType": "front",
-      "contractType": "cdd",
-      "location": "Toulouse",
-      "salary": 35638,
-      "createdAt": "2025-05-08",
-      "remoteType": null
-    },
-    {
       "id": 5,
       "companyName": "CyberNest",
       "jobType": "back",
