@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "companyName": "CyberNest",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Montpellier",
+    "salary": 38681,
+    "createdAt": "2025-01-28",
+    "remoteType": "partial"
+  },
+  {
+    "id": 2,
+    "companyName": "TechNova",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Nice",
+    "salary": 31639,
+    "createdAt": "2025-01-15",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 3,
+    "companyName": "TechNova",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Toulouse",
+    "salary": 38286,
+    "createdAt": "2025-01-11",
+    "remoteType": "partial"
+  },
+  {
+    "id": 4,
+    "companyName": "SmartApps",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 35638,
+    "createdAt": "2025-05-08",
+    "remoteType": null
+  },
+  {
+    "id": 5,
+    "companyName": "CyberNest",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Nantes",
+    "salary": 36985,
+    "createdAt": "2025-06-08",
+    "remoteType": "partial"
+  },
+  {
+    "id": 6,
+    "companyName": "NovaLabs",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Paris",
+    "salary": 20841,
+    "createdAt": "2025-05-19",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 7,
+    "companyName": "InnoWare",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Lille",
+    "salary": 22734,
+    "createdAt": "2025-06-02",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 8,
+    "companyName": "Cloudify",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Toulouse",
+    "salary": 35492,
+    "createdAt": "2025-04-14",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 9,
+    "companyName": "AlphaOmega",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Lille",
+    "salary": 39976,
+    "createdAt": "2025-03-12",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 10,
+    "companyName": "DeepDev",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Paris",
+    "salary": 37758,
+    "createdAt": "2025-02-25",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 11,
+    "companyName": "PixelPros",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Lille",
+    "salary": 24560,
+    "createdAt": "2025-06-02",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 12,
+    "companyName": "DataHive",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Paris",
+    "salary": 25481,
+    "createdAt": "2025-03-13",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 13,
+    "companyName": "SmartApps",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Toulouse",
+    "salary": 39434,
+    "createdAt": "2025-02-24",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 14,
+    "companyName": "StackShift",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 37190,
+    "createdAt": "2025-05-14",
+    "remoteType": null
+  },
+  {
+    "id": 15,
+    "companyName": "BitBuddies",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Paris",
+    "salary": 27841,
+    "createdAt": "2025-05-14",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 16,
+    "companyName": "NovaLabs",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Strasbourg",
+    "salary": 23174,
+    "createdAt": "2025-04-26",
+    "remoteType": "partial"
+  },
+  {
+    "id": 17,
+    "companyName": "DeepDev",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Nice",
+    "salary": 34418,
+    "createdAt": "2025-06-21",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 18,
+    "companyName": "WebWorx",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Strasbourg",
+    "salary": 35061,
+    "createdAt": "2025-05-07",
+    "remoteType": "partial"
+  },
+  {
+    "id": 19,
+    "companyName": "FutureTech",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Montpellier",
+    "salary": 32292,
+    "createdAt": "2025-03-09",
+    "remoteType": null
+  },
+  {
+    "id": 20,
+    "companyName": "PixelPros",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 36744,
+    "createdAt": "2025-04-10",
+    "remoteType": null
+  },
+  {
+    "id": 21,
+    "companyName": "CyberNest",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Lyon",
+    "salary": 22842,
+    "createdAt": "2025-02-12",
+    "remoteType": null
+  },
+  {
+    "id": 22,
+    "companyName": "NovaLabs",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Bordeaux",
+    "salary": 24075,
+    "createdAt": "2025-01-30",
+    "remoteType": null
+  },
+  {
+    "id": 23,
+    "companyName": "WebWorx",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Montpellier",
+    "salary": 33631,
+    "createdAt": "2025-05-05",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 24,
+    "companyName": "PixelPros",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Toulouse",
+    "salary": 31385,
+    "createdAt": "2025-01-12",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 25,
+    "companyName": "LogicLoop",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 34486,
+    "createdAt": "2025-02-18",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 26,
+    "companyName": "QuantumSoft",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Paris",
+    "salary": 37222,
+    "createdAt": "2025-01-25",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 27,
+    "companyName": "PixelPros",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Paris",
+    "salary": 21490,
+    "createdAt": "2025-02-28",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 28,
+    "companyName": "QuantumSoft",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Strasbourg",
+    "salary": 27987,
+    "createdAt": "2025-04-09",
+    "remoteType": null
+  },
+  {
+    "id": 29,
+    "companyName": "SmartApps",
+    "jobType": "back",
+    "contractType": "cdd",
+    "location": "Marseille",
+    "salary": 26585,
+    "createdAt": "2025-06-27",
+    "remoteType": null
+  },
+  {
+    "id": 30,
+    "companyName": "DataHive",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Nantes",
+    "salary": 36625,
+    "createdAt": "2025-06-14",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 31,
+    "companyName": "AlphaOmega",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Nantes",
+    "salary": 26243,
+    "createdAt": "2025-01-03",
+    "remoteType": null
+  },
+  {
+    "id": 32,
+    "companyName": "InnoWare",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 36144,
+    "createdAt": "2025-04-07",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 33,
+    "companyName": "BitBuddies",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Nice",
+    "salary": 22694,
+    "createdAt": "2025-06-23",
+    "remoteType": "partial"
+  },
+  {
+    "id": 34,
+    "companyName": "NovaLabs",
+    "jobType": "back",
+    "contractType": "cdd",
+    "location": "Marseille",
+    "salary": 23265,
+    "createdAt": "2025-02-28",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 35,
+    "companyName": "ByteForge",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Paris",
+    "salary": 22429,
+    "createdAt": "2025-06-18",
+    "remoteType": "partial"
+  },
+  {
+    "id": 36,
+    "companyName": "TechNova",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Nantes",
+    "salary": 29837,
+    "createdAt": "2025-01-21",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 37,
+    "companyName": "DataHive",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Montpellier",
+    "salary": 23948,
+    "createdAt": "2025-05-04",
+    "remoteType": null
+  },
+  {
+    "id": 38,
+    "companyName": "BitBuddies",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Nantes",
+    "salary": 30032,
+    "createdAt": "2025-02-25",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 39,
+    "companyName": "WebWorx",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Montpellier",
+    "salary": 20259,
+    "createdAt": "2025-06-26",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 40,
+    "companyName": "AlphaOmega",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Lyon",
+    "salary": 39564,
+    "createdAt": "2025-04-08",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 41,
+    "companyName": "FutureTech",
+    "jobType": "back",
+    "contractType": "cdd",
+    "location": "Bordeaux",
+    "salary": 28611,
+    "createdAt": "2025-02-16",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 42,
+    "companyName": "LogicLoop",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Strasbourg",
+    "salary": 31544,
+    "createdAt": "2025-06-06",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 43,
+    "companyName": "WebWorx",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Bordeaux",
+    "salary": 20983,
+    "createdAt": "2025-01-19",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 44,
+    "companyName": "FutureTech",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Bordeaux",
+    "salary": 22553,
+    "createdAt": "2025-04-06",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 45,
+    "companyName": "BitBuddies",
+    "jobType": "fullstack",
+    "contractType": "stage",
+    "location": "Nantes",
+    "salary": 34335,
+    "createdAt": "2025-03-16",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 46,
+    "companyName": "NextGen Solutions",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Lyon",
+    "salary": 23590,
+    "createdAt": "2025-03-23",
+    "remoteType": "partial"
+  },
+  {
+    "id": 47,
+    "companyName": "FutureTech",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Paris",
+    "salary": 36864,
+    "createdAt": "2025-04-30",
+    "remoteType": "partial"
+  },
+  {
+    "id": 48,
+    "companyName": "LogicLoop",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Bordeaux",
+    "salary": 26573,
+    "createdAt": "2025-02-18",
+    "remoteType": null
+  },
+  {
+    "id": 49,
+    "companyName": "QuantumSoft",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Lille",
+    "salary": 20034,
+    "createdAt": "2025-04-21",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 50,
+    "companyName": "QuantumSoft",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Montpellier",
+    "salary": 33397,
+    "createdAt": "2025-06-07",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 51,
+    "companyName": "InnoWare",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Lille",
+    "salary": 28400,
+    "createdAt": "2025-05-06",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 52,
+    "companyName": "NextGen Solutions",
+    "jobType": "front",
+    "contractType": "stage",
+    "location": "Toulouse",
+    "salary": 33170,
+    "createdAt": "2025-04-15",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 53,
+    "companyName": "DataHive",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Lyon",
+    "salary": 33665,
+    "createdAt": "2025-04-18",
+    "remoteType": null
+  },
+  {
+    "id": 54,
+    "companyName": "DataHive",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Bordeaux",
+    "salary": 37778,
+    "createdAt": "2025-05-11",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 55,
+    "companyName": "Cloudify",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Strasbourg",
+    "salary": 23339,
+    "createdAt": "2025-04-29",
+    "remoteType": null
+  },
+  {
+    "id": 56,
+    "companyName": "CyberNest",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Bordeaux",
+    "salary": 23269,
+    "createdAt": "2025-02-22",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 57,
+    "companyName": "StackShift",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Nantes",
+    "salary": 22397,
+    "createdAt": "2025-03-07",
+    "remoteType": null
+  },
+  {
+    "id": 58,
+    "companyName": "CyberNest",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Lyon",
+    "salary": 31893,
+    "createdAt": "2025-04-25",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 59,
+    "companyName": "Cloudify",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Lille",
+    "salary": 38120,
+    "createdAt": "2025-03-05",
+    "remoteType": "partial"
+  },
+  {
+    "id": 60,
+    "companyName": "CyberNest",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Lille",
+    "salary": 20810,
+    "createdAt": "2025-02-21",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 61,
+    "companyName": "Cloudify",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Lille",
+    "salary": 38393,
+    "createdAt": "2025-02-23",
+    "remoteType": null
+  },
+  {
+    "id": 62,
+    "companyName": "NovaLabs",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 32316,
+    "createdAt": "2025-01-09",
+    "remoteType": null
+  },
+  {
+    "id": 63,
+    "companyName": "SmartApps",
+    "jobType": "front",
+    "contractType": "stage",
+    "location": "Paris",
+    "salary": 21512,
+    "createdAt": "2025-05-16",
+    "remoteType": "partial"
+  },
+  {
+    "id": 64,
+    "companyName": "NovaLabs",
+    "jobType": "front",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 30263,
+    "createdAt": "2025-06-19",
+    "remoteType": "partial"
+  },
+  {
+    "id": 65,
+    "companyName": "NextGen Solutions",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Strasbourg",
+    "salary": 30234,
+    "createdAt": "2025-05-25",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 66,
+    "companyName": "PixelPros",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Toulouse",
+    "salary": 39199,
+    "createdAt": "2025-06-05",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 67,
+    "companyName": "ByteForge",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Nice",
+    "salary": 29692,
+    "createdAt": "2025-03-25",
+    "remoteType": null
+  },
+  {
+    "id": 68,
+    "companyName": "DeepDev",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Montpellier",
+    "salary": 20844,
+    "createdAt": "2025-06-18",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 69,
+    "companyName": "StackShift",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Lille",
+    "salary": 36522,
+    "createdAt": "2025-06-27",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 70,
+    "companyName": "BitBuddies",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Strasbourg",
+    "salary": 25993,
+    "createdAt": "2025-06-09",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 71,
+    "companyName": "CodeCrafters",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 29264,
+    "createdAt": "2025-04-10",
+    "remoteType": null
+  },
+  {
+    "id": 72,
+    "companyName": "DataHive",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Strasbourg",
+    "salary": 37899,
+    "createdAt": "2025-05-11",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 73,
+    "companyName": "LogicLoop",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Bordeaux",
+    "salary": 25230,
+    "createdAt": "2025-05-24",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 74,
+    "companyName": "SmartApps",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Strasbourg",
+    "salary": 25848,
+    "createdAt": "2025-01-22",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 75,
+    "companyName": "NovaLabs",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Bordeaux",
+    "salary": 31625,
+    "createdAt": "2025-01-30",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 76,
+    "companyName": "CodeCrafters",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Montpellier",
+    "salary": 24228,
+    "createdAt": "2025-04-24",
+    "remoteType": "partial"
+  },
+  {
+    "id": 77,
+    "companyName": "FutureTech",
+    "jobType": "back",
+    "contractType": "cdd",
+    "location": "Paris",
+    "salary": 27879,
+    "createdAt": "2025-01-08",
+    "remoteType": "partial"
+  },
+  {
+    "id": 78,
+    "companyName": "FutureTech",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 32046,
+    "createdAt": "2025-05-10",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 79,
+    "companyName": "BitBuddies",
+    "jobType": "back",
+    "contractType": "cdi",
+    "location": "Strasbourg",
+    "salary": 37068,
+    "createdAt": "2025-04-29",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 80,
+    "companyName": "ByteForge",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Nantes",
+    "salary": 21918,
+    "createdAt": "2025-01-13",
+    "remoteType": null
+  },
+  {
+    "id": 81,
+    "companyName": "DeepDev",
+    "jobType": "fullstack",
+    "contractType": "stage",
+    "location": "Lyon",
+    "salary": 36394,
+    "createdAt": "2025-02-14",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 82,
+    "companyName": "CodeCrafters",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 39129,
+    "createdAt": "2025-04-21",
+    "remoteType": null
+  },
+  {
+    "id": 83,
+    "companyName": "CyberNest",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Toulouse",
+    "salary": 33478,
+    "createdAt": "2025-01-31",
+    "remoteType": null
+  },
+  {
+    "id": 84,
+    "companyName": "FutureTech",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Nice",
+    "salary": 22709,
+    "createdAt": "2025-06-16",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 85,
+    "companyName": "StackShift",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Marseille",
+    "salary": 27522,
+    "createdAt": "2025-03-29",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 86,
+    "companyName": "StackShift",
+    "jobType": "front",
+    "contractType": "stage",
+    "location": "Toulouse",
+    "salary": 28353,
+    "createdAt": "2025-02-26",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 87,
+    "companyName": "NovaLabs",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Bordeaux",
+    "salary": 39795,
+    "createdAt": "2025-05-16",
+    "remoteType": "partial"
+  },
+  {
+    "id": 88,
+    "companyName": "CodeCrafters",
+    "jobType": "front",
+    "contractType": "stage",
+    "location": "Nice",
+    "salary": 30006,
+    "createdAt": "2025-01-04",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 89,
+    "companyName": "TechNova",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Bordeaux",
+    "salary": 26860,
+    "createdAt": "2025-03-04",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 90,
+    "companyName": "TechNova",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Toulouse",
+    "salary": 37461,
+    "createdAt": "2025-05-01",
+    "remoteType": null
+  },
+  {
+    "id": 91,
+    "companyName": "PixelPros",
+    "jobType": "fullstack",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 31450,
+    "createdAt": "2025-01-21",
+    "remoteType": null
+  },
+  {
+    "id": 92,
+    "companyName": "NovaLabs",
+    "jobType": "front",
+    "contractType": "cdd",
+    "location": "Strasbourg",
+    "salary": 36007,
+    "createdAt": "2025-02-18",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 93,
+    "companyName": "InnoWare",
+    "jobType": "manager",
+    "contractType": "cdi",
+    "location": "Toulouse",
+    "salary": 27811,
+    "createdAt": "2025-02-24",
+    "remoteType": "ponctual"
+  },
+  {
+    "id": 94,
+    "companyName": "WebWorx",
+    "jobType": "manager",
+    "contractType": "stage",
+    "location": "Nantes",
+    "salary": 37449,
+    "createdAt": "2025-03-23",
+    "remoteType": null
+  },
+  {
+    "id": 95,
+    "companyName": "TechNova",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Nantes",
+    "salary": 24255,
+    "createdAt": "2025-01-08",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 96,
+    "companyName": "NovaLabs",
+    "jobType": "fullstack",
+    "contractType": "cdd",
+    "location": "Strasbourg",
+    "salary": 27714,
+    "createdAt": "2025-03-08",
+    "remoteType": "partial"
+  },
+  {
+    "id": 97,
+    "companyName": "Cloudify",
+    "jobType": "back",
+    "contractType": "stage",
+    "location": "Marseille",
+    "salary": 34621,
+    "createdAt": "2025-05-16",
+    "remoteType": "fullRemote"
+  },
+  {
+    "id": 98,
+    "companyName": "CyberNest",
+    "jobType": "manager",
+    "contractType": "cdd",
+    "location": "Nantes",
+    "salary": 32226,
+    "createdAt": "2025-04-29",
+    "remoteType": "partial"
+  },
+  {
+    "id": 99,
+    "companyName": "SmartApps",
+    "jobType": "fullstack",
+    "contractType": "cdi",
+    "location": "Lyon",
+    "salary": 32379,
+    "createdAt": "2025-01-17",
+    "remoteType": "partial"
+  },
+  {
+    "id": 100,
+    "companyName": "CyberNest",
+    "jobType": "front",
+    "contractType": "cdi",
+    "location": "Nice",
+    "salary": 29482,
+    "createdAt": "2025-02-03",
+    "remoteType": "ponctual"
+  }
+]
